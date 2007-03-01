@@ -1,0 +1,68 @@
+fastjar
+------------------------------------------
+FastJar is an attempt at creating a feature-for-feature copy of Sun's 
+JDK's 'jar' command.  Since FastJar is written in C, it can create the 
+same .jar file as Sun's tool in a fraction of the time.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  zlib-1.2.3-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.4-1.4p6-1
+  binutils-20060817-1
+  cygport-0.2.10-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://fastjar.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/fastjar/
+
+-------------------------------------------
+
+Build instructions:
+  unpack fastjar-0.94-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./fastjar-0.94-X.cygport all
+
+This will create:
+  /usr/src/fastjar-0.94-X-src.tar.bz2
+  /usr/src/fastjar-0.94-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/fastjar.exe
+  /usr/bin/grepjar.exe
+  /usr/share/doc/Cygwin/fastjar-0.94.README
+  /usr/share/doc/fastjar-0.94/AUTHORS
+  /usr/share/doc/fastjar-0.94/COPYING
+  /usr/share/doc/fastjar-0.94/ChangeLog
+  /usr/share/doc/fastjar-0.94/Changes
+  /usr/share/doc/fastjar-0.94/INSTALL
+  /usr/share/doc/fastjar-0.94/LICENSE
+  /usr/share/doc/fastjar-0.94/NEWS
+  /usr/share/doc/fastjar-0.94/README
+
+------------------
+
+Port Notes:
+
+----- version 0.94-1 -----
+Initial release for Cygwin.
+Note that grepjar conflicts with the same command from gcc-java.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

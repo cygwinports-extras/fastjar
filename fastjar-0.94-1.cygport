@@ -1,0 +1,3 @@
+DESCRIPTION="jar utility written in C"
+HOMEPAGE="http://fastjar.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
