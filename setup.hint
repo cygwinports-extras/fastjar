@@ -1,5 +1,5 @@
 category: Java
-requires: cygwin zlib
+requires: zlib
 sdesc: "jar utility written in C"
 ldesc: "FastJar is an attempt at creating a feature-for-feature copy of 
 Sun's JDK's 'jar' command.  Since FastJar is written in C, it can create 
