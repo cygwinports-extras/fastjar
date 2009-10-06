@@ -1,0 +1,9 @@
+DESCRIPTION="jar utility written in C"
+HOMEPAGE="https://savannah.nongnu.org/projects/fastjar"
+SRC_URI="mirror://savannah/${PN}/${P}.tar.gz"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	rm -f ${D}/usr/lib/charset.alias
+}
