@@ -1,5 +1,5 @@
 category: Archive Java
-requires: libgcc1 zlib0
+requires: alternatives libgcc1 zlib0
 sdesc: "Jar utility written in C"
 ldesc: "FastJar is an attempt at creating a feature-for-feature copy of 
 Sun's JDK's jar command.  Since FastJar is written in C, it can create 

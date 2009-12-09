@@ -5,7 +5,7 @@ JDK's 'jar' command.  Since FastJar is written in C, it can create the
 same .jar file as Sun's tool in a fraction of the time.
 
 Runtime requirements:
-  cygwin-1.7.0-62
+  cygwin-1.7.0-67
   libgcc1-4.3.4-1
   zlib0-1.2.3-10
 
@@ -14,7 +14,7 @@ Build requirements:
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
   binutils-2.19.51-1
-  cygport-0.9.9-1
+  cygport-0.9.10-1
   gawk-3.1.7-1
   gcc4-core-4.3.4-1
   make-3.81-2
@@ -42,6 +42,9 @@ This will create:
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.98-2 -----
+Use alternatives(8) to provide a 'jar' symlink.
 
 ----- version 0.98-1 -----
 Initial release for Cygwin 1.7.
