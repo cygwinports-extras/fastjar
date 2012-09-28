@@ -1,0 +1,20 @@
+NAME="fastjar"
+VERSION=0.98
+RELEASE=3
+CATEGORY="Archive Java"
+SUMMARY="Jar utility written in C"
+DESCRIPTION="FastJar is an attempt at creating a feature-for-feature copy of
+Sun's JDK's jar command.  Since FastJar is written in C, it can create the
+same .jar file as Sun's tool in a fraction of the time."
+HOMEPAGE="https://savannah.nongnu.org/projects/fastjar"
+SRC_URI="mirror://savannah/fastjar/fastjar-${VERSION}.tar.gz"
+PATCH_URI="mirror://portage/app-arch/fastjar/files/0.98-traversal.patch"
+
+# make sure postinst/prerm scripts aren't forgotten
+fastjar_CONTENTS="etc/ usr/"
+
+src_install() {
+	cd ${B}
+	cyginstall
+	rm -f ${D}/usr/lib/charset.alias
+}
